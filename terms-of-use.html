@@ -1,0 +1,952 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Terms of Use — yme</title>
+<link rel="icon" href="assets/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Libre+Franklin:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Inter:wght@300;400;450;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg-page: #ffffff;
+    --paper: #ffffff;
+    --ink: #111213;
+    --ink-2: #3a3f42;
+    --ink-3: #757b80;
+    --line: #dce0e5;
+    --accent: #79c9cf;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0;background:var(--bg-page);color:var(--ink);font-family:'Inter',sans-serif;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+  body{font-size:15px;line-height:1.65;overflow-x:hidden}
+  a{color:inherit;text-decoration:none}
+  a:hover{text-decoration:underline}
+  
+  .page-wrapper {
+    padding: 120px 20px 60px;
+  }
+  .page-container {
+    max-width: 860px;
+    margin: 0 auto;
+    background: transparent;
+    padding: 40px 20px 120px;
+    position: relative;
+    overflow: hidden;
+  }
+  @media (max-width: 768px) {
+    .page-wrapper { padding: 100px 16px 40px; }
+    .page-container {
+      padding: 20px 16px 60px;
+      border-radius: 0;
+    }
+  }
+
+  .doc-header { text-align: center; margin-bottom: 80px; position: relative; }
+  .doc-header img { width: 300px; height: auto; margin: 0 auto 50px; display: block; filter: drop-shadow(0 20px 40px rgba(121,201,207,.2)); mix-blend-mode: multiply; }
+  .doc-header h1 { font-family: 'Cormorant Garamond', serif; font-weight: 400; font-size: 48px; margin: 0 0 16px; letter-spacing: -0.01em; color: var(--ink); }
+  .doc-header .subtitle { font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 20px; color: var(--ink-2); margin: 0 0 40px; }
+  .doc-header .sep { width: 180px; height: 1px; background: var(--line); margin: 0 auto 40px; }
+  .doc-header .meta { font-family: 'Cormorant Garamond', serif; font-size: 14px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink-3); line-height: 2; }
+  .doc-header .meta .meta-sep { display: block; height: 16px; }
+  
+  .doc-content h2, .doc-content h3 { font-family: 'Cormorant Garamond', serif; font-weight: 400; letter-spacing: -0.01em; color: var(--ink); }
+  .doc-content h2 { font-size: 32px; margin: 72px 0 24px; border-bottom: 1px solid var(--line); padding-bottom: 12px; display: flex; align-items: baseline; gap: 12px; }
+  .doc-content h2 .num { font-family: 'Inter', sans-serif; font-size: 11px; letter-spacing: 0.22em; color: var(--ink-3); font-weight: 500; }
+  .doc-content h3 { font-size: 24px; margin: 48px 0 20px; }
+  
+  .doc-content p { margin: 0 0 20px; color: var(--ink-2); }
+  .doc-content ul, .doc-content ol { color: var(--ink-2); margin: 0 0 24px; padding-left: 24px; }
+  .doc-content li { margin-bottom: 8px; }
+  .doc-content strong { color: var(--ink); font-weight: 600; }
+  .doc-content p > em:only-child { color: var(--ink-3); font-style: italic; }
+  
+  /* Regular Blockquote */
+  .doc-content blockquote {
+    margin: 32px 0;
+    padding: 24px 32px;
+    border-left: 3px solid var(--line);
+    background: transparent;
+    border-radius: 0;
+  }
+  
+  /* Notice Blockquote */
+  .doc-content blockquote.notice-block {
+    margin: 48px 0;
+    padding: 36px 40px 40px;
+    border: 1px solid var(--line);
+    background: transparent;
+    border-radius: 4px;
+  }
+  .doc-content blockquote.notice-block .eyebrow {
+    font-family: 'Inter', sans-serif;
+    font-size: 11px;
+    letter-spacing: 0.22em;
+    color: var(--ink-3);
+    text-transform: uppercase;
+    margin-bottom: 16px;
+  }
+  .doc-content blockquote.notice-block h3 {
+    margin-top: 0;
+    margin-bottom: 24px;
+    font-size: 28px;
+  }
+  .doc-content blockquote.notice-block p {
+    font-size: 13.5px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    line-height: 1.7;
+    margin-bottom: 16px;
+    color: var(--ink-2);
+  }
+  .doc-content blockquote.notice-block p:last-child {
+    margin-bottom: 0;
+  }
+
+  /* TOC Box */
+  .toc-box {
+    border: 1px solid var(--line);
+    border-radius: 4px;
+    padding: 36px 40px;
+    margin: 48px 0;
+  }
+  .toc-box h3 {
+    margin-top: 0;
+    margin-bottom: 24px;
+    font-size: 28px;
+  }
+  .toc-box ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 40px;
+    row-gap: 16px;
+  }
+  .toc-box li {
+    font-size: 14px;
+    color: var(--ink-2);
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+  }
+  .toc-box li .num {
+    font-family: 'Inter', sans-serif;
+    font-size: 11px;
+    letter-spacing: 0.18em;
+    color: var(--ink-3);
+  }
+  @media (max-width: 600px) {
+    .toc-box ul { grid-template-columns: 1fr; }
+  }
+
+  /* Tables */
+  .doc-content table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 40px 0;
+    font-size: 14px;
+    display: block;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  .doc-content th, .doc-content td {
+    border: none;
+    border-bottom: 1px solid var(--line);
+    padding: 16px 20px 16px 0;
+    text-align: left;
+    vertical-align: top;
+  }
+  .doc-content th {
+    font-weight: 500;
+    color: var(--ink);
+    border-bottom: 1px solid #111;
+  }
+  .doc-content td {
+    color: var(--ink-2);
+  }
+  .doc-content tr:last-child td {
+    border-bottom: none;
+  }
+
+  
+
+  
+  
+  
+  
+
+
+  
+
+  .doc-content .clause {
+    margin-bottom: 24px;
+  }
+  .doc-content .clause strong {
+    display: block;
+    margin-bottom: 4px;
+    font-size: 16px;
+    letter-spacing: -0.01em;
+  }
+
+
+  /* Exact index.html Header and Footer Styles */
+  .site-header {position:fixed;top:0;left:0;right:0;z-index:50;transition:background .35s ease, backdrop-filter .35s ease, border-color .35s ease;background:rgba(255,255,255,0.9);-webkit-backdrop-filter:blur(18px) saturate(140%);backdrop-filter:blur(18px) saturate(140%);border-bottom:1px solid rgba(0,0,0,0.05);}
+  .header-bar {display:flex;justify-content:space-between;align-items:center;height:64px;transition:height .35s ease}
+  .brand {display:inline-flex;align-items:center;line-height:0}
+  .brand img {height:32px;width:auto; filter: invert(1);}
+  .desktop-nav {display:flex;gap:36px}
+  .nav-link {font-size:13px;color:#3a3f42;font-weight:450;letter-spacing:.01em;position:relative;padding:6px 0;text-decoration:none !important;}
+  .nav-link::after {content:'';position:absolute;left:0;right:0;bottom:0;height:1px;background:#111213;transform-origin:left;transform:scaleX(0);transition:transform .4s cubic-bezier(.2,.7,.2,1)}
+  .nav-link:hover {color:#111213}
+  .nav-link:hover::after {transform:scaleX(1)}
+  .menu-btn {display:none;width:38px;height:38px;border-radius:50%;border:1px solid #dce0e5;align-items:center;justify-content:center;background:none;color:#111213;cursor:pointer;}
+  .menu-btn svg path {stroke: #111213;}
+  .mobile-menu {background:rgba(255,255,255,0.95);-webkit-backdrop-filter:blur(20px);backdrop-filter:blur(20px);border-top:1px solid rgba(0,0,0,0.05);padding:24px 22px 32px;position:fixed;top:64px;left:0;right:0;z-index:49;}
+  .mobile-menu a {display:block;padding:14px 0;font-size:18px;font-family:'Libre Franklin',sans-serif;font-weight:400;letter-spacing:-.015em;color:#111213;border-bottom:1px solid rgba(0,0,0,0.05);text-decoration:none !important;}
+  
+  .site-footer {padding:80px 0;background:#ffffff;text-align:left;}
+  .site-footer .footer-mark {margin-bottom:40px;text-align:center;}
+  .site-footer .footer-mark img {height:32px;display:inline-block; filter: invert(1);}
+  .site-footer .footer-base {display:flex;flex-direction:column;align-items:center;gap:24px;padding-top:32px;border-top:1px solid rgba(0,0,0,0.05);}
+  .site-footer .pill {display:inline-flex;align-items:center;gap:8px;font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:#79c9cf;padding:7px 12px;border:1px solid rgba(121,201,207,.35);border-radius:999px;background:rgba(121,201,207,.04)}
+  .site-footer .pill .dot {width:5px;height:5px;border-radius:50%;background:#79c9cf;box-shadow:0 0 0 4px rgba(121,201,207,.25)}
+  .site-footer .footer-legal {display:flex;gap:16px;font-size:13px;}
+  .site-footer .footer-legal a {color:#3a3f42;text-decoration:none;}
+  .site-footer .footer-legal a:hover {color:#111213;}
+  .site-footer .footer-legal .sep {color:#dce0e5;}
+  .site-footer .copy {font-size:13px;color:#757b80;}
+  .site-footer .footer-contact {display:flex;flex-direction:column;align-items:center;gap:4px;font-size:13px;}
+  .site-footer .footer-contact .label {color:#757b80;}
+  .site-footer .footer-contact a {color:#111213;text-decoration:none;}
+  .site-footer .footer-contact a:hover {text-decoration:underline;}
+
+  .wrap {max-width:1280px;margin:0 auto;padding:0 32px}
+
+  @media (max-width:780px){
+    .desktop-nav{display:none !important}
+    .menu-btn{display:inline-flex !important}
+    .site-footer {padding:40px 0;}
+    .site-footer .footer-base {flex-direction:column;align-items:center;text-align:center;gap:32px;}
+    .wrap{padding:0 22px}
+  }
+
+</style>
+</head>
+<body>
+<header class="site-header" id="siteHeader">
+  <div class="wrap header-bar">
+    <a href="index.html" class="brand"><img src="assets/yme-wordmark.svg" alt="yme"></a>
+    <nav class="desktop-nav">
+      <a href="index.html#how" class="nav-link">How It Works</a>
+      <a href="index.html#events" class="nav-link">Events</a>
+      <a href="index.html#premium" class="nav-link">Premium</a>
+    </nav>
+    <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">
+      <svg width="16" height="16" viewBox="0 0 16 16"><path id="menuIcon" d="M2 4h12M2 8h12M2 12h12" stroke="#ededed" stroke-width="1.3" stroke-linecap="round"/></svg>
+    </button>
+  </div>
+  <div class="mobile-menu" id="mobileMenu" hidden>
+    <a href="index.html#how">How It Works</a>
+    <a href="index.html#events">Events</a>
+    <a href="index.html#premium">Premium</a>
+  </div>
+</header>
+<div class="page-wrapper">
+  <div class="page-container">
+    <div class="doc-header">
+      <a href="index.html"><img src="assets/yme-logo.png" alt="YME Logo"></a>
+      <h1>Terms of Use</h1>
+      <div class="subtitle">YME Technologies LLC, a Florida limited liability company</div>
+      <div class="sep"></div>
+      <div class="meta"><span>Effective 10 September 2026 · Last updated 10 September 2026</span><br><span class="meta-sep"></span><span>Reviewed Version 22</span></div>
+    </div>
+
+    <div class="doc-content">
+      <blockquote class="notice-block">
+<div class="eyebrow">NOTICE</div>
+<h3>Two things to read before anything else</h3>
+<p>Section 27, Dispute Resolution. Most disputes between you and Yme must be resolved by individual arbitration, not in court. You and Yme each give up the right to a jury trial and the right to take part in a class action. You can opt out within 30 days: it is free and it will not affect your account. Claims of sexual assault and sexual harassment are excluded and may always be brought in court.</p>
+<p>Section 23, Limitation of Liability. There is a limit on what Yme can be required to pay you. It does not apply to fraud, willful misconduct, gross negligence, or anything the law says cannot be limited.</p>
+</blockquote>
+<h2><span class="num">01</span> Introduction, and How You Accept These Terms</h2>
+<p><em>Summary: How this agreement works, who you are contracting with, and how you accept it.</em></p>
+<p class="clause"><strong>1.1 Who runs Yme</strong> Yme: Date by Design (the “Service”) is operated by YME Technologies LLC, a Florida limited liability company formed on 8 July 2026, Florida Division of Corporations document number L26000363165 (“Yme,” “we,” “us,” “our”). Our mailing address for notices is 20801 Biscayne Blvd, Suite 403 PMB 1006, Aventura, FL 33180. Our registered agent for service of process is MT &amp; Associates LLC, 8461 Lake Worth Road, Suite 121, Lake Worth, FL 33467. These Terms of Use (the “Terms”) are a binding contract between you and YME Technologies LLC. You and we are each a “party,” and together the “parties.”</p>
+<p class="clause"><strong>1.2 What the Service is</strong> The “Service” means the Yme mobile application, any Yme website, and everything we make available through them: profiles, invitations, plans, messaging, memberships, digital items, and venue features.</p>
+<p class="clause"><strong>1.3 The documents that go with these Terms</strong> The following are part of your agreement with us and are incorporated by reference:</p>
+<ul>
+<li>the Privacy Policy, which explains what we do with your information;</li>
+<li>the Community Guidelines, which say what is and is not acceptable on Yme;</li>
+<li>the Safety Guide, which we ask you to read before you meet anyone; and</li>
+<li>any additional terms shown to you when you purchase a membership or a digital item.</li>
+</ul>
+<p class="clause"><strong>1.4 How you accept</strong> You accept these Terms by creating an account, by accessing or using the Service, or by buying a membership or a digital item. If you do not agree to these Terms, do not use Yme. These Terms apply to you whether or not you register and whether or not you pay us anything.</p>
+<p class="clause"><strong>1.5 The summaries</strong> Each section of these Terms has a short summary beside it. The summaries are there to help you find your way around. They are not part of the agreement, they do not replace the text, and where a summary and the text of a section differ, the text controls. Please read the sections themselves.</p>
+<p class="clause"><strong>1.6 We may update these Terms</strong> We will post any updated version on this page with a new date. Where a change materially affects your rights, we will give you reasonable notice before it takes effect. Material changes to Section 23 (Limitation of Liability) and Section 27 (Dispute Resolution) require your affirmative acceptance and will not be imposed on you through continued use alone. Section 28 explains all of this in full.</p>
+<p class="clause"><strong>1.7 Which terms control</strong> Where terms shown to you for a specific feature or purchase conflict with these Terms, those specific terms control for that feature or purchase only, and only so far as they conflict. Everything else here still applies. Where these Terms refer to a variable such as a price, a cancellation window, or a number of invitations, the value shown to you in the app or at checkout is the one that applies. Section 35 (Special State Terms) controls over anything else in these Terms for members who live in the states it covers.</p>
+<p class="clause"><strong>1.8 Required features</strong> We may introduce features that are a required part of using Yme, for example verification, safety, or security measures. If you do not wish to use a required feature, you may not be able to keep using the Service, and you can delete your account under Section 21.</p>
+<p class="clause"><strong>1.9 Rights you cannot sign away</strong> Nothing in these Terms removes a right you have under a law that applies to you and that cannot be waived by agreement. Where a provision here conflicts with such a law, that law applies to you instead of the provision.</p>
+<h2><span class="num">02</span> Who May Use Yme</h2>
+<p><em>Summary: You must be 18, able to enter a contract, and in the United States.</em></p>
+<p class="clause"><strong>2.1 Requirements</strong> To use the Service, you must:</p>
+<ul>
+<li>be at least 18 years old;</li>
+<li>have the legal capacity to enter into a binding contract;</li>
+<li>not be barred from using the Service under any law that applies to you, including U.S. sanctions and export laws;</li>
+<li>not have been permanently removed from the Service, unless we have given you written permission to return;</li>
+<li>not have been convicted of, or pleaded no contest to, a crime involving violence, a threat of violence, or sexual misconduct, and not be required to register as a sex offender in any jurisdiction; and</li>
+<li>use the Service for your own lawful, personal, non-commercial purposes, unless we authorize otherwise in writing.</li>
+</ul>
+<p class="clause"><strong>2.2 Accuracy</strong> You must give us accurate information about your age and identity, and keep it accurate.</p>
+<p class="clause"><strong>2.3 Users under 18</strong> The Service is for adults. We use screening and verification measures, but no age-verification method is perfect and we do not represent that every user is over 18. If we learn or reasonably believe a user is under 18, we will remove the account and delete associated information in accordance with our Privacy Policy.</p>
+<p class="clause"><strong>2.4 Where the Service is available</strong> Yme is offered only in the United States. The app is made available through the U.S. app stores only, and accounts may only be created from within the United States.</p>
+<p class="clause"><strong>2.5 Losing eligibility</strong> If you stop meeting these requirements, your permission to use the Service ends immediately.</p>
+<h2><span class="num">03</span> Your Account</h2>
+<p><em>Summary: One person, one account. Keep your login safe. You can delete your account any time.</em></p>
+<p class="clause"><strong>3.1 Registration</strong> You must register to use most of the Service, with accurate, current, complete information.</p>
+<p class="clause"><strong>3.2 Verification</strong> We may require phone, email, photo, selfie-comparison, identity-document, or other verification, at signup or later, to confirm you are a real, unique, eligible person. Verification is a fraud and integrity measure. It is not a background check and it is not a safety guarantee.</p>
+<p class="clause"><strong>3.3 One person, one account</strong> Your account is personal to you. You may not share, sell, rent, or transfer it, create an account for someone else, or hold more than one account without permission.</p>
+<p class="clause"><strong>3.4 Security</strong> You are responsible for your credentials, your device, and activity under your account. Tell us immediately at <a href="mailto:support@ymedate.com">support@ymedate.com</a> if you suspect unauthorized access.</p>
+<p class="clause"><strong>3.5 Prohibited accounts</strong> We may remove accounts that are duplicate, automated, fraudulent, impersonating, or created to evade a ban.</p>
+<p class="clause"><strong>3.6 Inactivity</strong> If you do not sign in for 24 consecutive months, we may deactivate and then delete your account and its associated data. We will email the address on your account at least 30 days beforehand so you can keep it active. Deletion under this section extinguishes any unused paid Extras, which are not refundable.</p>
+<p class="clause"><strong>3.7 Deleting your account</strong> You may delete your account at any time from inside the app. When you do, we close it immediately: you are signed out, you cannot sign back in, your profile stops being visible to anyone, pending invitations are cancelled, and account-linked features end. Deletion is not a pause and it is not undone by signing in again.</p>
+<p class="clause"><strong>3.7a What happens after that</strong> Erasure runs once the account is closed. We delete your photos, messages, and profile content from our live systems and from our message archive within 30 days, and we delete any face-verification image and comparison data we hold about you. Residual copies may remain in secured backups for up to 90 days, after which they are purged; backups are never used to restore a deleted account. The records listed in 3.8 as surviving deletion are kept for the reasons given there.</p>
+<p class="clause"><strong>3.7b Your subscription is separate</strong> Deleting your account does not cancel a subscription billed by Apple or Google. Cancel it separately as 10.3 explains, or you will continue to be charged.</p>
+<p class="clause"><strong>3.8 What happens to your information</strong> We delete or de-identify information as described in our Privacy Policy. Our retention periods are:</p>
+<table>
+<thead>
+<tr>
+<th>Information</th>
+<th>How long we keep it</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Photos and messages</td>
+<td>Deleted from live systems and from our message archive within 30 days after your account is deleted</td>
+</tr>
+<tr>
+<td>Face-verification information</td>
+<td>Deleted when your account is deleted. While your account is active, retained and destroyed on the biometric retention and destruction schedule published in our Privacy Policy</td>
+</tr>
+<tr>
+<td>Location</td>
+<td>Only your most recent location point is stored; no history or movement trail is retained</td>
+</tr>
+<tr>
+<td>Safety and abuse records, including reports, moderation decisions, and investigation records</td>
+<td>Retained for 7 years, and retained after account deletion, because we need them to protect other users and to meet legal obligations</td>
+</tr>
+<tr>
+<td>Bans and blocks</td>
+<td>Retained permanently, so a ban cannot be evaded and a block cannot be undone by deleting and recreating an account</td>
+</tr>
+<tr>
+<td>Transaction, payment, and tax records</td>
+<td>Retained for 7 years</td>
+</tr>
+<tr>
+<td>Backups</td>
+<td>Residual copies may remain in secured backups for up to 90 days after deletion, after which they are purged. Backups are not used to restore deleted accounts</td>
+</tr>
+</tbody></table>
+<p class="clause"><strong>3.8a Records that survive deletion</strong> Safety and abuse records, bans, blocks, and transaction records are retained as set out above even after you delete your account. We will tell you this if you ask us to delete your information. Full detail is in the Privacy Policy.</p>
+<h2><span class="num">04</span> What Yme Is, and What Yme Does Not Promise</h2>
+<p><em>Summary: What Yme does, and the things we cannot promise you.</em></p>
+<p class="clause"><strong>4.1 What the Service lets you do</strong> Depending on the version of the product and where you are, Yme may let you create a profile, see and express interest in other users, propose a date at a suggested venue, accept or decline or change a proposal, agree on a time, unlock messaging once the conditions are met, send or answer group and real-time invitations, use location- or area-based features, and buy a membership or an extra invitation.</p>
+<p class="clause"><strong>4.2 What we do not promise</strong> Yme is a platform for making plans. It is not a guarantee of outcomes. We do not promise that:</p>
+<ul>
+<li>any user will see, respond to, or accept your invitation;</li>
+<li>a user who accepts will actually attend, arrive on time, behave appropriately, or be who they say they are;</li>
+<li>any user is compatible with you, is single, is honest, or is safe;</li>
+<li>any particular number of users, invitations, matches, or dates will be available to you;</li>
+<li>any venue will have a table, a seat, or any particular experience; or</li>
+<li>any feature will remain available.</li>
+</ul>
+<p class="clause"><strong>4.3 A “yes” in the app is not a booking</strong> When someone accepts your invitation, that is two adults agreeing to try to meet. It is not a table, not a reservation, and not a promise from us that the evening will happen. Unless we tell you in the app that we have made a reservation for you and confirmed it, no reservation exists. Book the venue yourself, or turn up and take your chances like anyone else.</p>
+<p class="clause"><strong>4.3a If we add reservations later</strong> We are working towards being able to book a table for you at some venues. That feature does not exist today. If and when it does, we will say so clearly in the app at the moment you use it, it will be governed by additional terms shown to you at the time, and Section 12 explains how it would work. Nothing in these Terms is a promise that Yme will ever offer reservations, or that a reservation will be available to you at any particular venue, on any particular night.</p>
+<p class="clause"><strong>4.4 You decide whether to meet</strong> Whether, when, where, and how you meet another person is your decision, and yours alone.</p>
+<p class="clause"><strong>4.5 We are not part of your relationship</strong> Yme is not a party to any arrangement, relationship, or dispute between you and another user.</p>
+<p class="clause"><strong>4.6 Features change</strong> We test, add, limit, geographically restrict, and remove features.</p>
+<h2><span class="num">05</span> Rules for Using Yme</h2>
+<p><em>Summary: The rules. Breaking them can cost you your account.</em></p>
+<p>You agree not to do any of the following, on or through the Service.</p>
+<p class="clause"><strong>5.1 Harm to people</strong> Harass, stalk, threaten, intimidate, bully, defame, or incite violence. Engage in hate speech or discrimination based on any protected characteristic. Doxx or expose another person’s private information.</p>
+<p class="clause"><strong>5.2 Sexual harm</strong> Post or send non-consensual sexual content. Engage in sexual exploitation, coercion, or trafficking. Solicit or offer escorting, prostitution, or transactional arrangements prohibited by law or by these Terms.</p>
+<p class="clause"><strong>5.3 Minors</strong> Post content that sexualizes a minor, solicit anyone under 18, or use the Service to contact a minor. Permanent ban, and reported to the authorities.</p>
+<p class="clause"><strong>5.4 Deception</strong> Misrepresent your identity, age, photographs, employment, relationship status, location, or affiliations. Use another person’s photographs. Impersonate anyone.</p>
+<p class="clause"><strong>5.5 Money</strong> Ask other users for money, gifts, loans, crypto, or investments. Run scams, romance fraud, pyramid schemes, or phishing.</p>
+<p class="clause"><strong>5.6 Unauthorized commerce</strong> Advertise, promote, recruit, or solicit for any business, service, campaign, or organization without our written permission.</p>
+<p class="clause"><strong>5.7 Technical abuse</strong> Scrape, crawl, or data-mine. Use bots. Reverse engineer. Probe our security. Circumvent rate limits, paywalls, verification, moderation, or ranking. Frame or mirror the Service.</p>
+<p class="clause"><strong>5.8 Recording others</strong> Record, screenshot, or distribute another user’s private communications, images, or profile content outside the Service without their permission and any consent required by law.</p>
+<p class="clause"><strong>5.9 Manipulating the system</strong> Game invitations, rankings, verification, reports, refunds, chargebacks, promo codes, or credits. Submit reports you know to be false, or make them to retaliate.</p>
+<p class="clause"><strong>5.10 Bans</strong> Do not create a new account after we suspend or ban you.</p>
+<p class="clause"><strong>5.11 Digital items</strong> Do not resell, transfer, duplicate, or counterfeit digital items, or attempt to obtain them other than by buying them, except where we expressly allow it.</p>
+<p class="clause"><strong>5.12 Illegal activity</strong> Do not use the Service in connection with weapons, illegal drugs, or any criminal activity.</p>
+<p class="clause"><strong>5.13 Conduct at venues</strong> Do not endanger or disrupt other people, staff, vendors, venue personnel, or the public. Follow venue rules and the lawful instructions of staff.</p>
+<p class="clause"><strong>5.14 Enforcement</strong> We may investigate and take proportionate action. We do not promise to investigate every report, reach any particular result, or resolve disputes between users.</p>
+<h2><span class="num">06</span> Your Content</h2>
+<p><em>Summary: You own what you post. We take only the licence we need to run the app.</em></p>
+<p class="clause"><strong>6.1 What “Your Content” means</strong> Everything you submit through the Service: photos, videos, voice content, profile details, prompts, preferences, messages, date proposals, venue suggestions, reviews, reports, comments, and feedback.</p>
+<p class="clause"><strong>6.2 You own it</strong> These Terms do not transfer ownership of Your Content to us.</p>
+<p class="clause"><strong>6.3 The licence you give us</strong> You grant Yme a non-exclusive, worldwide, royalty-free, sublicensable (only to our service providers), transferable (only with a transfer of our business) licence to host, store, reproduce, adapt, reformat, translate, display, distribute, and otherwise use Your Content solely to operate, provide, secure, moderate, improve, and support the Service, and to promote it in the ways described in 6.4. It lasts while Your Content is on the Service, plus a reasonable period for backups, safety records, and legal obligations.</p>
+<p class="clause"><strong>6.4 Marketing use requires separate permission</strong> We will not use Your Content, meaning your photographs, name, or likeness, in advertising or marketing outside the Service unless you give us separate, specific permission.</p>
+<p class="clause"><strong>6.5 Your promises</strong> You own or have all rights needed to submit Your Content, it infringes nobody’s IP, privacy, or publicity rights, and anyone appearing in it has consented.</p>
+<p class="clause"><strong>6.6 Moderation and review</strong> We may review, screen, refuse, limit, or remove Your Content, by automated tools, human review, or both. This includes messages and other private communications sent through the Service, which we may review, automatically or manually, for safety, fraud, abuse, and legal-compliance purposes. By using the Service, you consent to that review. We are not obligated to publish, display, monitor, retain, or restore any content.</p>
+<p class="clause"><strong>6.6a What we actually do</strong> Reserving the right to review is not the same as doing it routinely. Our current practice is in our Community Guidelines: we run automated filters for the most serious harms, and we review private messages when a user reports them. If that changes, we will say so.</p>
+<p class="clause"><strong>6.7 Retention and backups</strong> Removed content may persist in backups, logs, and safety records for a period. Deleting content in the app does not guarantee immediate deletion everywhere.</p>
+<h2><span class="num">07</span> Safety and Meeting People Offline</h2>
+<p><em>Summary: Meeting people you don’t know carries real risk. Please read this section properly.</em></p>
+<h3>Meeting strangers carries real risk. Yme cannot eliminate it.</h3>
+<p class="clause"><strong>7.1 The risk is real</strong> Yme exists to move interactions from a screen into the physical world. That is the point of the product, and it is also its principal risk. People misrepresent who they are. People commit fraud, harassment, theft, assault, and sexual assault. Drinks are tampered with. Rides are unsafe. These risks are real, they exist on every platform of this kind, and we cannot make them go away.</p>
+<p class="clause"><strong>7.2 What our verification does and does not mean</strong> Our verification, moderation, and fraud systems reduce impersonation and abuse. They are not a background check, a criminal-history check, a sex-offender-registry search, or a character assessment. They tell you nothing reliable about a person’s history, intentions, honesty, health, or safety. The absence of a report about a user does not mean that user is safe.</p>
+<p class="clause"><strong>7.3 Background checks</strong> Yme does not conduct criminal background checks on users. If you live in Illinois, New Jersey, or Texas, see 35.9, which sets out the disclosure your state requires us to give you.</p>
+<p class="clause"><strong>7.4 Precautions we recommend</strong> These are recommendations, not guarantees. Following them does not make any meeting safe.</p>
+<ul>
+<li>Meet for the first time in a public, populated place, and stay there.</li>
+<li>Tell a friend where you are going, who you are meeting, and when you expect to be back. Share your live location with someone you trust.</li>
+<li>Arrange your own transportation, both ways, and keep control of it.</li>
+<li>Watch your drink. Do not accept a drink you did not see poured. Know your limit.</li>
+<li>Do not share your home address, workplace, financial information, or identifying documents with someone you have just met.</li>
+<li>Do not send money to another user. Ever. For any reason.</li>
+<li>Video-chat first if you have any doubt about who someone is.</li>
+<li>Leave the moment you feel uncomfortable. You do not owe anyone an explanation.</li>
+</ul>
+<p class="clause"><strong>7.5 In an emergency, call emergency services</strong> If you are in immediate danger, call 911 first. Reporting to Yme is not a substitute for law enforcement, and we cannot respond in real time.</p>
+<p class="clause"><strong>7.6 Alcohol and substances</strong> Many of the venues where Yme members meet serve alcohol. Intoxication increases every risk in this section, including your risk of harming someone else. You are responsible for your own consumption and conduct.</p>
+<p class="clause"><strong>7.7 Off-platform communication</strong> Once you leave the Service to talk elsewhere, our safety, moderation, and reporting tools do not apply.</p>
+<p class="clause"><strong>7.8 You accept these risks knowingly</strong> You understand the risks described in this section, and you choose to use Yme anyway. To the fullest extent permitted by law, you knowingly and voluntarily assume the ordinary risks of meeting people you do not know, including the risk that another user misrepresents themselves, behaves badly, or causes you harm. This is not a waiver of anything that cannot lawfully be waived, and it does not limit our liability for our own gross negligence, recklessness, willful misconduct, or fraud.</p>
+<p class="clause"><strong>7.8a Safety features are tools, not guarantees</strong> Where we offer safety features such as verification, reporting, blocking, location sharing, and check-ins, they can fail, be delayed, be unavailable, or be defeated by a determined person. Do not rely on any feature of Yme as a substitute for your own judgment or for emergency services.</p>
+<p class="clause"><strong>7.9 Your responsibility</strong> To the fullest extent permitted by law, you are responsible for your own decisions about whom you meet and what you do. This section does not waive any duty or liability that cannot lawfully be waived, including for our own gross negligence, willful misconduct, or fraud.</p>
+<h2><span class="num">08</span> Reporting, Moderation, and Enforcement</h2>
+<p><em>Summary: How to report and block someone, and what we can do about it.</em></p>
+<p class="clause"><strong>8.1 Reporting and blocking</strong> You can report and block other users in the app, and report content, messages, and profiles.</p>
+<p class="clause"><strong>8.2 How we review</strong> We run automated filters continuously for the most serious harms: child sexual exploitation, credible threats of violence, and trafficking. Private messages are reviewed by a person when they are reported. We do not promise that our systems will detect every violation.</p>
+<p class="clause"><strong>8.3 What we can do</strong> Warn you; limit or remove features; remove content; restrict or suspend your account; cancel invitations; refuse future purchases; or ban you permanently.</p>
+<p class="clause"><strong>8.4 We may act on patterns</strong> We may act on reports, risk signals, repeated behavior, and platform-integrity concerns, including conduct we learn about off-platform.</p>
+<p class="clause"><strong>8.5 We do not disclose our methods</strong> where doing so would compromise another person’s safety or privacy, or the integrity of our systems.</p>
+<p class="clause"><strong>8.6 Appeals</strong> If we restrict, suspend, or ban your account, the notice we send you includes an email address you can write to. A person will review your appeal against the record.</p>
+<p class="clause"><strong>8.6a Safety decisions are different</strong> Where we act on a report involving assault, sexual misconduct, threats of violence, or a minor, we do not reverse that decision simply because an appeal is well argued, or because the person who reported it stops responding to us. We will review it. The default is that it stands.</p>
+<p class="clause"><strong>8.7 Law enforcement and preservation</strong> We may preserve records and disclose information where legally required, or where we reasonably believe it necessary to prevent serious harm.</p>
+<h2><span class="num">09</span> Invitations, Plans, Changes, and No-Shows</h2>
+<p><em>Summary: Making plans, changing them, and what happens if you don’t turn up. Cancelling because you feel unsafe is always free.</em></p>
+<p class="clause"><strong>9.1 How plans are made</strong> A plan starts with a proposal tied to a place. The other user may accept, decline, propose a change, or ignore it. Once accepted, you agree on a time.</p>
+<p class="clause"><strong>9.2 The plan is between you and the other user</strong> We facilitate the proposal and the acceptance. We do not control whether either of you shows up.</p>
+<p class="clause"><strong>9.3 Confirming</strong> You are responsible for confirming, arriving, and telling the other person promptly if anything changes.</p>
+<p class="clause"><strong>9.4 Cancelling and rescheduling</strong> A plan is late-cancelled if you cancel it less than 8 hours before the agreed time. Rescheduling rules and any limits are disclosed in the app, on the purchase screen, or in the feature rules, and those values control.</p>
+<p class="clause"><strong>9.5 No-shows and repeated late cancellations</strong> Failing to appear for a plan you accepted, or repeatedly cancelling at the last minute, damages the experience for everyone. Where we identify a pattern, we may warn you, restrict your ability to send invitations, limit your visibility, or, for repeated or egregious conduct, suspend or ban you. The specific consequences, and how many strikes trigger them, are shown to you before you accept a plan. The ladder in 9.5c applies, and where what the app shows you and 9.5c differ, 9.5c controls.</p>
+<p class="clause"><strong>9.5a These are not fines</strong> We do not charge you money as a penalty for a late cancellation or a no-show. The consequences are restrictions on features, and they expire over time.</p>
+<p class="clause"><strong>9.5b If someone no-shows on you, we credit your invitation back</strong> You should not pay for someone else’s behaviour.</p>
+<p class="clause"><strong>9.5c The ladder</strong> Strikes are counted on a rolling 90-day basis and expire automatically 90 days after they are recorded. The first late cancellation in any 90-day period carries no consequence. Beyond that, the following may apply:</p>
+<table>
+<thead>
+<tr>
+<th>Conduct</th>
+<th>Consequence</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Late cancellation</td>
+<td>First: no action. Second: a written warning. Third: a 48-hour cooldown, during which you may not send or accept new invitations. Fourth: a 7-day suspension of invitation features.</td>
+</tr>
+<tr>
+<td>No-show</td>
+<td>First: a written warning. Second: a 7-day suspension of invitation features. Third: human review, which may result in further suspension or termination of your account.</td>
+</tr>
+</tbody></table>
+<p class="clause"><strong>9.5d Never money</strong> We do not impose any monetary penalty, fee, charge, or forfeiture for a late cancellation or a no-show under any circumstances. Enforcement under this Section affects access to features only.</p>
+<p class="clause"><strong>9.5e Safety controls over this Section</strong> Nothing in 9.5c or 9.5d applies to a cancellation made under 9.6. A cancellation made because you do not feel safe or comfortable never counts as a late cancellation, never records a strike, and never affects your visibility, at any time, including at the door.</p>
+<p class="clause"><strong>9.6 Cancelling because you feel unsafe is always free</strong> When you cancel, you can tell us you do not feel comfortable. A cancellation made for that reason never counts against you: no strike, no restriction, no effect on your visibility, no matter how late it is, including at the door. We will not tell the other person why. Nothing in this Agreement should ever make you hesitate to leave a situation you do not want to be in.</p>
+<p class="clause"><strong>9.6a Other reasons</strong> We also take reasonable account of emergencies, illness, and venue closures. And you are not penalized if the other person cancelled first, or if you both did.</p>
+<p class="clause"><strong>9.7 Venue charges</strong> Some venues impose their own no-show, deposit, or minimum-spend charges. Where disclosed before you confirm, you owe that charge to the venue, not to us.</p>
+<h2><span class="num">10</span> Memberships and Subscriptions</h2>
+<p><em>Summary: The paid membership: $19.99 a month, or $119.99 a year. It renews until you cancel.</em></p>
+<p class="clause"><strong>10.1 Tiers</strong> Yme offers a free tier and a paid membership: $19.99 per month, or $119.99 per year. The price, the billing period, the renewal terms, and how to cancel are all shown to you before you buy.</p>
+<p class="clause"><strong>10.1a What the free tier gives you</strong> Free members can send one invitation per week. When you have used it, you can wait for the next one, buy an extra invitation (Section 11), or upgrade.</p>
+<p class="clause"><strong>10.1b A membership is digital features only</strong> It gives you access to features inside the app, and nothing outside it.</p>
+<p class="clause"><strong>10.2 Automatic renewal</strong> Paid memberships renew automatically at the then-current price until you cancel. Before you buy, we tell you the price, the frequency, the renewal terms, and how to cancel, and we send the renewal reminders described in 10.3a and, for members in the states listed in Section 35, the additional reminders described in 35.10.</p>
+<p class="clause"><strong>10.3 How to cancel</strong> If you subscribed through Apple, manage and cancel in your Apple account. Apple, not Yme, administers billing, cancellation, and refunds for those purchases. Through Google Play, cancel in your Play account. Directly through Yme, cancel in account settings or contact <a href="mailto:support@ymedate.com">support@ymedate.com</a>. Cancelling stops future renewals; you keep benefits through the period you paid for. Cancelling is always at least as easy as signing up, and never requires you to call us, wait for an agent, or explain yourself.</p>
+<p class="clause"><strong>10.3a Reminders</strong> We send you a reminder before every annual renewal, in time for you to cancel if you want to. Monthly memberships renew without a separate reminder; the receipt from the platform that billed you is your notice, and you can cancel at any time. Members in the states listed in 35.10 receive further reminders on the cadence that section sets out.</p>
+<p class="clause"><strong>10.3b Refunds the law requires</strong> If the law where you live gives you a right to cancel and be refunded, for example a short cancellation window for dating-service subscriptions in some states, or a refund of the unused part of a subscription in the event of death or disability, that right applies to you, and we will honour it. Section 35 sets out those rights state by state. If Apple or Google processed your payment and will not process the refund, write to us at <a href="mailto:support@ymedate.com">support@ymedate.com</a> and we will refund you directly, up to the amount you paid for the period in dispute.</p>
+<p class="clause"><strong>10.4 Price changes</strong> We give advance notice of a price change to a renewing membership, with instructions to cancel before it takes effect. Where the law requires your affirmative consent, we get it.</p>
+<p class="clause"><strong>10.5 Trials and promotions</strong> Promotional pricing lasts only for the stated period, then converts to the regular price and renews. The conversion price and date are disclosed before you enroll.</p>
+<p class="clause"><strong>10.6 Failed payments</strong> We may retry, suspend benefits, or cancel. You remain responsible for amounts properly owed.</p>
+<p class="clause"><strong>10.7 Changes to benefits</strong> If we materially reduce the benefits of a membership you already paid for, we give notice and, where appropriate or required, a pro-rated refund or equivalent.</p>
+<p class="clause"><strong>10.8 No outcome is included</strong> A paid membership buys you features. It does not buy matches, responses, invitations, dates, popularity, visibility, relationships, or anything outside the app.</p>
+<h2><span class="num">11</span> Extra Invitations and Other One-Time Purchases</h2>
+<p><em>Summary: Besides the membership, there are two things you can buy: an extra invitation, and Skip the Wait. They are a licence to use a feature, not money, and not property.</em></p>
+<p class="clause"><strong>11.1 What you can buy</strong> Apart from the membership (Section 10), there are only two one-time purchases in Yme:</p>
+<ul>
+<li>An extra invitation. Free members get one invitation per week. Once you have used it, you can buy another instead of waiting.</li>
+<li>Skip the Wait: re-opening your plan cycle so you can start a new invitation immediately, instead of waiting for your current cycle to finish.</li>
+</ul>
+<p>We call these “Extras.” Skip the Wait applies to your plan cycle inside Yme. It does not give you priority, queue access, or entry at any venue or restaurant. If we add another Extra, we will tell you what it does and what it costs before you buy it.</p>
+<p class="clause"><strong>11.2 An Extra is a licence, not property</strong> An Extra is a limited, personal, revocable licence to use a feature of Yme. It is not money, not currency, not stored value, and not property you own. A balance shown in your account measures the extent of that licence; it is not a real-world balance.</p>
+<p class="clause"><strong>11.3 No cash value</strong> Extras cannot be exchanged for cash, except where the law requires it or where 11.8 applies.</p>
+<p class="clause"><strong>11.4 No transfers</strong> You may not sell, trade, gift, or transfer an Extra to anyone.</p>
+<p class="clause"><strong>11.5 When Extras end</strong> An Extra you have paid for stays in your account, and does not expire, for as long as your account is active. If we ever give you an Extra for free, as a promotion or a goodwill gesture, it may have an expiry date, and if it does, we will tell you that before you receive it. If your account is deleted, by you, by us under Section 21, or for inactivity under Section 3.6, any unused Extras are extinguished and are not refundable, except where 11.8 applies.</p>
+<p class="clause"><strong>11.6 When an Extra is used up</strong> An extra invitation is spent when you send the invitation, not when the other person answers it. If they decline it, ignore it, or never reply, the Extra is gone, and that is not a fault or a failure of the Service. Skip the Wait is spent at the moment your new cycle opens. If the other person accepts your invitation and then fails to appear for the plan, that is a no-show, and we credit the invitation back to you under 9.5b. We will tell you both of these things on the purchase screen, before you pay.</p>
+<p class="clause"><strong>11.7 Fraud</strong> We may remove Extras obtained through fraud, error, a bug, or chargeback abuse.</p>
+<p class="clause"><strong>11.8 We will not arbitrarily take back what you paid for</strong> If we close your account without cause, we will refund any unused paid Extras in accordance with Section 13, and 11.5 does not extinguish them. If we close it for a serious breach of these Terms, unused Extras may be forfeited so far as the law allows.</p>
+<h2><span class="num">12</span> Venues, Restaurants, and Reservations</h2>
+<p><em>Summary: Venues run themselves, not us. Some of them pay us, and where they do, we say so. We do not book tables today.</em></p>
+<p class="clause"><strong>12.1 Recommendations are not endorsements or guarantees</strong> When Yme suggests a venue, we are recommending a place, not warranting it.</p>
+<p class="clause"><strong>12.2 Sponsored and partner venues are disclosed</strong> Some venues pay us or have a commercial relationship with us. Where that is the case, it is labelled in the app, at the point you see the recommendation.</p>
+<p class="clause"><strong>12.3 The venue controls the venue</strong> Availability, pricing, menus, hours, dress code, admission, wait times, service, seating, accessibility, and conduct rules are set by the venue. We are not responsible for a venue that refuses you entry, changes hours, cancels a booking, or gives you bad service, unless we expressly assumed that responsibility.</p>
+<p class="clause"><strong>12.4 You follow the venue’s rules</strong> When you visit a venue through Yme, you agree to comply with that venue’s admission, age, dress, conduct, and safety rules, and with the lawful instructions of its staff.</p>
+<p class="clause"><strong>12.5 Perks are limited</strong> Where Yme offers discounts, priority access, or hospitality benefits, they are subject to availability, capacity, blackout periods, and partner terms, and may be changed or withdrawn.</p>
+<p class="clause"><strong>12.6 Venue charges are yours</strong> Deposits, minimum spends, gratuities, no-show and late-cancellation fees, where disclosed before you confirm, are between you and the venue.</p>
+<p class="clause"><strong>12.7 Reservations: where we are today</strong> Yme does not book tables. We do not hold, guarantee, or reserve anything for you at any venue. A venue you see in Yme is a suggestion, not a booking. If you want a table, book it yourself.</p>
+<p class="clause"><strong>12.8 Reservations: if and when we add them</strong> We would like to be able to book a table for you, and we are working towards it. If we launch that feature, all of the following will apply, and none of it is a promise that we will launch it at all:</p>
+<ul>
+<li>A reservation exists only once we tell you, in the app, that it is confirmed. A request is not a reservation. A pending booking is not a reservation.</li>
+<li>The venue decides. Whether a table is available, whether your booking is accepted, and whether it is honoured when you arrive are the venue’s decisions, not ours.</li>
+<li>A venue can cancel on you. Restaurants overbook, close, and lose bookings. If that happens we will tell you as soon as we know and help where we reasonably can, but we do not guarantee that a confirmed booking will be honoured, and we are not responsible for a venue that fails to seat you, unless we have expressly promised otherwise for that specific booking.</li>
+<li>The venue’s own rules apply to you. Deposits, card holds, minimum spend, dress codes, late-arrival rules, and no-show and late-cancellation fees are set by the venue. Where they are disclosed to you before you confirm, you owe them to the venue.</li>
+<li>Additional terms will be shown to you at the time, and those terms will govern the reservation.</li>
+</ul>
+<p class="clause"><strong>12.9 Availability</strong> Any reservation feature may be limited to certain venues, nights, memberships, or cities, and may be changed, capped, suspended, or withdrawn at any time.</p>
+<h2><span class="num">13</span> Payments, Taxes, Refunds, and Chargebacks</h2>
+<p><em>Summary: How you pay, what it costs, and how refunds work.</em></p>
+<p class="clause"><strong>13.1 Payment methods</strong> Those shown at checkout, which may include Apple, Google Play, cards, and other processors.</p>
+<p class="clause"><strong>13.2 Processors</strong> Payments are processed by third parties under their own terms. We do not store full card details.</p>
+<p class="clause"><strong>13.3 Authorization</strong> You authorize us, or the applicable platform, to charge your payment method for the amounts disclosed, on the schedule disclosed.</p>
+<p class="clause"><strong>13.4 Taxes and fees</strong> We will not charge you an amount, fee, or tax that was not disclosed before you confirmed the purchase.</p>
+<p class="clause"><strong>13.5 Pricing errors</strong> If a price is displayed in obvious error, we may cancel and refund. We will not charge a materially different amount without telling you first.</p>
+<p class="clause"><strong>13.6 Promotional codes</strong> Subject to their own conditions, no cash value, void if obtained improperly.</p>
+<p class="clause"><strong>13.7 Refunds</strong> Memberships and Digital Items: per the policy disclosed at purchase, the rules of the platform that processed the payment, and the law. If Apple processed the payment, refund requests go to Apple. Rights your state gives you: Section 35.</p>
+<p class="clause"><strong>13.8 Non-waivable rights</strong> Some jurisdictions give consumers cancellation and refund rights that cannot be waived, including short cooling-off rights for dating-service subscriptions in a number of U.S. states. Those rights apply to you regardless of anything in these Terms. Section 35 sets out those rights state by state.</p>
+<p class="clause"><strong>13.9 Refund timing</strong> We initiate refunds promptly. How long it takes to reach you depends on your bank or the platform, which we do not control. Where Section 35 sets a deadline for refunding you, that deadline applies.</p>
+<p class="clause"><strong>13.10 Chargebacks</strong> Talk to us first. If you initiate a chargeback, we may suspend your account, cancel affected items, and investigate. Repeated or abusive chargebacks may result in a permanent ban.</p>
+<h2><span class="num">14</span> Location Features</h2>
+<p><em>Summary: We use your location while the app is open, to rank people by distance and show the map. We keep one point, not a trail.</em></p>
+<p class="clause"><strong>14.1 Permissions</strong> Some features need location access. You control the permission and may turn it off; location-dependent features will then not work.</p>
+<p class="clause"><strong>14.2 What we collect, and what we do with it</strong> While the app is open, we collect your device’s location and use it to rank nearby members by distance, power the distance filter, and show the map. We collect it in the foreground only: nothing is collected while the app is closed, and we do not ask for background-location permission. We store your most recent location point only. Each update replaces the previous one, so no history or movement trail is kept. Venues are shown at their real addresses, because those are public places.</p>
+<p class="clause"><strong>14.2a What other members see</strong> Other members never see your location. They see distance. The pins on the map are venues and dates, not people.</p>
+<p class="clause"><strong>14.2b Third parties</strong> To turn coordinates into a place name, to suggest a venue, and to draw the map, we send your coordinates or your typed place queries to Google, which handles them under its own terms. The Privacy Policy sets out the detail of what we collect, how long we keep it, and who receives it.</p>
+<p class="clause"><strong>14.3 Accuracy</strong> Location, distance, map, and venue information may be inaccurate, delayed, or stale. Do not rely on it as exact.</p>
+<p class="clause"><strong>14.4 You may not use location to hunt people</strong> Using any Yme feature to track, follow, stalk, surveil, ambush, harass, or determine the home, workplace, or private location of another person is an immediate, permanent ban and, where warranted, a report to law enforcement.</p>
+<p class="clause"><strong>14.5 Sharing your location is a decision</strong> Think about it before you make it.</p>
+<h2><span class="num">15</span> Third-Party Services</h2>
+<p><em>Summary: Other companies are involved in running Yme, and their terms apply to them.</em></p>
+<p class="clause"><strong>15.1 Who we work with</strong> Apple and Google; payment processors; venues and restaurants; reservation systems; map and location providers; identity-verification vendors; analytics and hosting providers; social-media services; creators and brands.</p>
+<p class="clause"><strong>15.2 Their terms apply to them</strong> When you interact with a third party through Yme, that party’s terms and privacy policy govern its relationship with you. We do not control them.</p>
+<p class="clause"><strong>15.3 But we remain responsible for us</strong> Involving a vendor does not release Yme from responsibility for Yme’s own conduct.</p>
+<p class="clause"><strong>15.4 Links</strong> Links to third-party sites are not endorsements.</p>
+<h2><span class="num">16</span> Mobile App Licence and Platform Terms</h2>
+<p><em>Summary: Apple’s required terms for the app.</em></p>
+<p class="clause"><strong>16.1 Licence</strong> A limited, personal, non-exclusive, non-transferable, non-sublicensable, revocable licence to install and use the Yme app on a device you own or control, for personal use, per these Terms and the usage rules of the store you got it from.</p>
+<p class="clause"><strong>16.2 Apple</strong> Where you obtained the app through Apple:</p>
+<ul>
+<li>These Terms are between you and Yme only. They are not with Apple.</li>
+<li>Yme, not Apple, is solely responsible for the app and its content, subject to Apple’s standard terms.</li>
+<li>Apple has no obligation to furnish maintenance or support.</li>
+<li>If the app fails to conform to an applicable warranty, you may notify Apple, and Apple may refund the purchase price (if any). Apple has no other warranty obligation.</li>
+<li>Yme, not Apple, is responsible for addressing claims relating to the app, including product liability, failure to conform to a legal requirement, and consumer-protection claims, except as Apple’s terms or the law provide otherwise.</li>
+<li>Yme, not Apple, handles any third-party claim that the app infringes IP rights.</li>
+<li>You are not located in an embargoed or terrorist-supporting country and are not on any U.S. Government restricted-party list.</li>
+<li>Apple and its subsidiaries are third-party beneficiaries of this Section, and may enforce it against you.</li>
+<li>Digital purchases in the iOS app go through Apple’s in-app purchase system where Apple requires it. Subscriptions Apple processes are managed and cancelled in your Apple account.</li>
+<li>Questions about the app go to Yme at <a href="mailto:support@ymedate.com">support@ymedate.com</a>, not to Apple.</li>
+</ul>
+<p class="clause"><strong>16.3 Google</strong> Where you obtained the app through Google Play, Google’s terms apply to your download and to purchases Google processes.</p>
+<p class="clause"><strong>16.4 Platform rules are platform rules</strong> App-store requirements are contractual requirements of the platform. They are not the law of any state.</p>
+<h2><span class="num">17</span> Privacy</h2>
+<p><em>Summary: What we do with your information is in the Privacy Policy, not here.</em></p>
+<p class="clause"><strong>17.1 Our Privacy Policy</strong>, at ymedate.com/privacy, explains what we collect, how we use it, when we share it, and your choices. It is a separate document, incorporated here by reference where legally appropriate.</p>
+<p class="clause"><strong>17.2 At a high level,</strong> running Yme involves handling account details, profile content and photos, identity-verification information, location information, device and usage information, communications, purchase information, reports and safety information, and partner interactions.</p>
+<p class="clause"><strong>17.3 These Terms do not replace the Privacy Policy</strong> Where the two conflict on a privacy question, the Privacy Policy controls.</p>
+<h2><span class="num">18</span> Yme’s Intellectual Property</h2>
+<p><em>Summary: The app, the name, and the software are ours.</em></p>
+<p class="clause"><strong>18.1 What we own</strong> Everything in the Service that is not user content: the Yme name and marks, logos, app design and interface, software and source code, algorithms and models, databases, written material, graphics, brand assets, product names, and the structure of the platform.</p>
+<p class="clause"><strong>18.2 What you may not do</strong> Copy, scrape, reproduce, distribute, publicly display, reverse engineer, decompile, create derivative or competing products from, frame, mirror, or commercially exploit any part of the Service; use our branding without written permission; or circumvent any technical protection.</p>
+<p class="clause"><strong>18.3 Open source</strong> Some components are licensed under open-source licences, which govern those components.</p>
+<p class="clause"><strong>18.4 Other users’ content is not yours</strong> Content another user posts belongs to that user. You may not copy, save, republish, or distribute it outside the Service without their permission.</p>
+<p class="clause"><strong>18.5 No scraping, no data extraction, no AI training</strong> You may not collect, copy, index, harvest, or extract data from Yme by any automated or manual means, and you may not use any Yme content, including profiles, photographs, messages, or venue data, to train, fine-tune, or evaluate any machine-learning or artificial-intelligence system. This applies whether or not the data is publicly visible, and it applies to anyone acting on your behalf.</p>
+<h2><span class="num">19</span> Feedback</h2>
+<p><em>Summary: If you send us an idea, we are allowed to use it.</em></p>
+<p class="clause"><strong>19.1</strong> If you send us ideas, suggestions, or feedback about the Service, we may use them freely, without compensating you and without obligation. This applies only to what you voluntarily send us about Yme. It gives us no rights in your unrelated intellectual property.</p>
+<h2><span class="num">20</span> Availability and Changes to the Service</h2>
+<p><em>Summary: Things break. Features change. We don’t promise perfection.</em></p>
+<p class="clause"><strong>20.1</strong> The Service may be interrupted, suspended for maintenance, degraded, or unavailable. We do not promise uninterrupted or error-free operation.</p>
+<p class="clause"><strong>20.2</strong> Features may be tested with a subset of users, geographically limited, changed, or discontinued.</p>
+<p class="clause"><strong>20.3</strong> We may stop offering the Service. If we do, we will give reasonable notice where practicable and handle paid memberships and unused paid Digital Items fairly and lawfully.</p>
+<h2><span class="num">21</span> Suspension, Termination, and Deletion</h2>
+<p><em>Summary: When we can suspend or close your account, and what happens to money you’ve paid.</em></p>
+<p class="clause"><strong>21.1 By you</strong> You may delete your account at any time from inside the app. Section 3.7 sets out exactly what happens when you do, and how long erasure takes. Cancel platform-billed subscriptions through Apple or Google separately.</p>
+<p class="clause"><strong>21.2 By us</strong> We may suspend, restrict, or terminate for breach of these Terms, conduct that endangers another person, fraud or payment abuse, ban evasion, false identity information, or where the law requires. For serious safety, fraud, legal, or platform-integrity risks, we may act immediately and without prior notice.</p>
+<p class="clause"><strong>21.3 What survives</strong> Sections 6.3 (content licences already granted), 18 (intellectual property), 22 (disclaimers), 23 (limitation of liability), 24 (indemnification), 25 (disputes between users), 26 (governing law and venue), 27 (dispute resolution), 33 (general terms), 34 (time limit for bringing a claim), and 35 (special state terms), together with any other provision that by its nature should survive, remain in force after your account ends.</p>
+<p class="clause"><strong>21.4 Money and items</strong> Termination for cause does not entitle you to a refund, except where the law or a disclosed policy says otherwise. Termination by us without cause does not extinguish your rights to a refund or equivalent for the unused, paid portion of a membership or unused paid Digital Items. We do not keep all prepaid amounts in every circumstance.</p>
+<p class="clause"><strong>21.5 Your account is not property</strong> An account is a revocable permission to use Yme. You have no ownership interest in it, no right to have it reinstated, and no right to any particular profile, username, visibility, ranking, or level of service.</p>
+<p class="clause"><strong>21.6 Pending refunds</strong> Termination does not extinguish a refund we already owe you.</p>
+<h2><span class="num">22</span> Disclaimers</h2>
+<p><em>Summary: The things we do not promise.</em></p>
+<p class="clause"><strong>22.1</strong> TO THE FULLEST EXTENT PERMITTED BY LAW, THE SERVICE IS PROVIDED “AS IS” AND “AS AVAILABLE,” AND YME DISCLAIMS ALL WARRANTIES OF ANY KIND, WHETHER EXPRESS, IMPLIED, OR STATUTORY, INCLUDING MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT.</p>
+<p class="clause"><strong>22.2</strong> WE MAKE NO REPRESENTATION ABOUT: THE CONDUCT, IDENTITY, HONESTY, INTENTIONS, HISTORY, HEALTH, OR SUITABILITY OF ANY USER; THE ACCURACY OF ANY PROFILE; WHETHER ANY DATE OR MEETING WILL OCCUR OR BE ENJOYABLE; THE QUALITY, PRICING, OR CONDUCT OF ANY VENUE, VENDOR, OR PARTNER; THE PERFORMANCE OF ANY THIRD-PARTY SERVICE; THE UNINTERRUPTED, SECURE, OR ERROR-FREE OPERATION OF THE SERVICE; OR THE COMPLETE EFFECTIVENESS OF ANY VERIFICATION, MODERATION, OR SAFETY SYSTEM.</p>
+<p class="clause"><strong>22.3</strong> YME DOES NOT PROVIDE MEDICAL, HEALTH, PSYCHOLOGICAL, RELATIONSHIP, LEGAL, OR FINANCIAL ADVICE.</p>
+<p class="clause"><strong>22.4 Two limits</strong> First, we do not disclaim the specific promises we actually make in these Terms: our commitment on disclosed pricing (13.4). Second, we do not disclaim anything that cannot lawfully be disclaimed, including the rights set out in Section 35.</p>
+<h2><span class="num">23</span> Limitation of Liability</h2>
+<p><em>Summary: There is a limit on what we can be made to pay you. It has exceptions.</em></p>
+<p class="clause"><strong>23.1</strong> TO THE FULLEST EXTENT PERMITTED BY LAW, YME WILL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, EXEMPLARY, OR PUNITIVE DAMAGES, OR FOR LOSS OF PROFITS, REVENUE, DATA, GOODWILL, OR ANTICIPATED SAVINGS, ARISING OUT OF: YOUR USE OF OR INABILITY TO USE THE SERVICE; THE CONDUCT OF ANY OTHER USER, ONLINE OR OFFLINE; ANY MEETING, DATE, OR OFFLINE INTERACTION; ANY VENUE; THE ACTS OR OMISSIONS OF ANY THIRD PARTY; OR ANY INTERRUPTION OF OR ERROR IN THE SERVICE.</p>
+<p class="clause"><strong>23.2</strong> YME’S TOTAL AGGREGATE LIABILITY FOR ALL CLAIMS WILL NOT EXCEED THE GREATER OF (A) THE TOTAL AMOUNT YOU PAID TO YME IN THE 12-MONTH PERIOD BEFORE THE EVENT GIVING RISE TO THE CLAIM, OR (B) ONE HUNDRED DOLLARS ($100).</p>
+<p class="clause"><strong>23.3 What this does NOT limit</strong> Nothing in these Terms excludes liability for fraud, willful misconduct, gross negligence, death or personal injury caused by our negligence, statutory consumer protections that cannot be limited, or anything else that cannot lawfully be excluded.</p>
+<p class="clause"><strong>23.4 These limits are part of the deal</strong> The disclaimers in Section 22 and the limits in this Section 23 are a fundamental basis of the bargain between you and Yme. Without them, we could not offer the Service at these prices, or at all. They apply even if a remedy in these Terms is found to have failed of its essential purpose, and they apply regardless of the legal theory a claim is brought under, whether contract, tort, statute, or otherwise.</p>
+<p class="clause"><strong>23.5 Savings</strong> Where a jurisdiction does not permit these limits, they apply only to the extent permitted, and the rest stands.</p>
+<h2><span class="num">24</span> Indemnification</h2>
+<p><em>Summary: If your conduct causes someone to sue us, you cover it.</em></p>
+<p class="clause"><strong>24.1</strong> To the extent permitted by law, you will indemnify and hold harmless Yme and its officers, directors, employees, and agents from third-party claims, and the reasonable, documented losses and legal fees arising from them, to the extent they arise out of your unlawful conduct, Your Content, your breach of these Terms, your misuse of the Service, your infringement of a third party’s rights, or your conduct at a venue.</p>
+<p class="clause"><strong>24.2 What is not covered</strong> This indemnity does not apply to the extent a claim arises from Yme’s own negligence, willful misconduct, or breach of these Terms.</p>
+<p class="clause"><strong>24.3 Procedure</strong> We will notify you promptly in writing, give you the opportunity to assume the defense with counsel reasonably acceptable to us, and cooperate at your expense. We will not settle in a way that imposes liability or an admission on you without your consent. You may not settle in a way that imposes any obligation or admission on Yme without our written consent.</p>
+<h2><span class="num">25</span> Disputes Between Users</h2>
+<p><em>Summary: Arguments between users are between users.</em></p>
+<p class="clause"><strong>25.1</strong> Personal disputes between users are yours to resolve. Yme is not a mediator, a judge, or a debt collector.</p>
+<p class="clause"><strong>25.2</strong> We may take safety or moderation action, but we are not required to investigate or resolve a personal disagreement.</p>
+<p class="clause"><strong>25.3</strong> We may preserve information and cooperate with lawful requests from law enforcement.</p>
+<p class="clause"><strong>25.4</strong> Do not use the reporting system to retaliate. Knowingly false reports violate these Terms.</p>
+<p class="clause"><strong>25.5 Claims about other users are between you and them</strong> To the fullest extent permitted by law, you release Yme from claims, demands, and damages of every kind arising out of or connected with a dispute between you and another user, including anything that happens at a meeting or at a venue. This release does not cover Yme’s own gross negligence, willful misconduct, or fraud, and it does not release any claim that cannot lawfully be released.</p>
+<p class="clause"><strong>25.6 California users</strong> If you live in California, you waive California Civil Code § 1542, which says: “A general release does not extend to claims that the creditor or releasing party does not know or suspect to exist in his or her favor at the time of executing the release and that, if known by him or her, would have materially affected his or her settlement with the debtor or released party.”</p>
+<h2><span class="num">26</span> Governing Law and Venue</h2>
+<p><em>Summary: Florida law. Florida courts.</em></p>
+<p class="clause"><strong>26.1</strong> These Terms are governed by the laws of the State of Florida, without regard to conflict-of-laws rules.</p>
+<p class="clause"><strong>26.2</strong> Subject to Section 27, any claim proceeding in court must be brought exclusively in the state or federal courts in Miami-Dade County, Florida.</p>
+<p class="clause"><strong>26.3</strong> This does not deprive you of the mandatory consumer protections of the place where you live, or of the right to bring a claim in small-claims court where the law permits it.</p>
+<h2><span class="num">27</span> Dispute Resolution</h2>
+<p><em>Summary: Most disputes go to individual arbitration instead of court. You can opt out within 30 days, free.</em></p>
+<h3>Read this section. It affects your legal rights.</h3>
+<p>It requires most disputes between you and Yme to be resolved by binding individual arbitration rather than in court, and it waives your right to a jury trial and to take part in a class action. You may opt out within 30 days, at no cost and with no effect on your account. Claims of sexual assault and sexual harassment are excluded and may always be brought in court.</p>
+<p class="clause"><strong>27.1 Talk to us first</strong> Before starting arbitration or a lawsuit, you must send us a written notice of dispute, and we must send you one before we start anything against you. This step is a condition precedent to filing, it applies equally to both of us, and neither of us may file until it has been completed.</p>
+<p class="clause"><strong>27.1a What the notice must say, and how to send it</strong> Send your notice to <a href="mailto:legal@ymedate.com">legal@ymedate.com</a>, or by mail to YME Technologies LLC, 20801 Biscayne Blvd, Suite 403 PMB 1006, Aventura, FL 33180. It must include your name, the email address or phone number on your account, a description of what happened and when, and the specific relief you are asking for, including any amount of money. It must be signed by you personally. A notice signed only by a lawyer, or sent as one of a batch of substantially identical notices on behalf of multiple people, does not satisfy this Section, and neither does a notice that does not describe your own individual claim.</p>
+<p class="clause"><strong>27.1b Forty-five days</strong> We will each try in good faith to resolve the dispute within 45 days of the notice being received. Either of us may ask for a telephone or video conference during that period, and the other will make a person with settlement authority available. Every limitations period, including the one-year limit in Section 34, is paused from the day the notice is sent until the 45 days end. A court or the arbitrator may enjoin a filing made before this step is complete, and the arbitration provider should not accept a demand for arbitration that does not attach a compliant notice.</p>
+<p class="clause"><strong>27.1c What this step does not delay</strong> This Section does not apply to a claim brought in small-claims court, to a request for emergency injunctive relief to stop unauthorized access to the Service or to protect intellectual property, or to any claim under 27.3.</p>
+<p class="clause"><strong>27.1d Federal law governs this Section</strong> This Section 27 involves interstate commerce and is governed by the Federal Arbitration Act (9 U.S.C. §§ 1 et seq.), not by state arbitration law. That is so even though Florida law governs the rest of these Terms.</p>
+<p class="clause"><strong>27.2 Scope</strong> Except as stated in 27.3, disputes arising out of or relating to these Terms or the Service will be resolved by binding individual arbitration, administered by the American Arbitration Association (AAA) under its Consumer Arbitration Rules and, where applicable, its Mass Arbitration Supplementary Rules, as modified here. Arbitration is less formal than court, discovery is more limited, and review is narrow. The arbitrator may award any relief a court could, but only to you, individually.</p>
+<p class="clause"><strong>27.3 What is not arbitrated</strong></p>
+<ul>
+<li>Claims of sexual assault or sexual harassment. Under federal law (9 U.S.C. §§ 401 to 402) you may elect to bring these in court, and no pre-dispute arbitration agreement or class waiver applies to them.</li>
+<li>Small claims. Either of us may bring a qualifying individual claim in small-claims court.</li>
+<li>Injunctive relief to protect intellectual property or stop unauthorized access.</li>
+<li>Anything a court holds is not arbitrable.</li>
+</ul>
+<p class="clause"><strong>27.4 Fees</strong> Yme will pay the filing, administrative, and arbitrator fees for any individual claim seeking $75,000 or less, unless the arbitrator finds the claim frivolous. If you show financial hardship, we will pay your share. The cost of arbitration should never be the reason you cannot bring a legitimate claim.</p>
+<p class="clause"><strong>27.5 Where and how</strong> If you request a hearing, it will be held where you live, by video, or in Miami-Dade County, at your election. Smaller claims may be decided on written submissions.</p>
+<p class="clause"><strong>27.6</strong> CLASS-ACTION AND JURY-TRIAL WAIVER. TO THE EXTENT PERMITTED BY LAW, YOU AND YME EACH WAIVE THE RIGHT TO A JURY TRIAL AND THE RIGHT TO BRING OR PARTICIPATE IN A CLASS, COLLECTIVE, CONSOLIDATED, OR REPRESENTATIVE ACTION. THIS DOES NOT APPLY TO CLAIMS UNDER 27.3.</p>
+<p class="clause"><strong>27.7 Severability</strong> If 27.6 is held unenforceable as to a particular claim or form of relief, that claim proceeds in court and is stayed pending arbitration of the rest. If 27.6 is held unenforceable entirely, all of Section 27 other than 27.1, 27.1a, 27.1b, 27.1c and 27.1d is void and disputes proceed in court under Section 26.</p>
+<p class="clause"><strong>27.8 How to opt out</strong> Email <a href="mailto:arbitration-optout@ymedate.com">arbitration-optout@ymedate.com</a> within 30 days of first accepting these Terms, with your name, the email or phone number on your account, and a statement that you are opting out of arbitration. It costs nothing and it will not affect your account in any way. Opting out of arbitration does not release you from 27.1 to 27.1c.</p>
+<p class="clause"><strong>27.9 Coordinated filings</strong> If 25 or more similar claims are filed against Yme by or with the assistance of the same counsel or a coordinated entity, the claims will be administered in batches of no more than 20, and each batch will be treated as a single arbitration for fee purposes. The parties will select two bellwether cases from the first batch to be heard first, and will mediate the remaining claims in good faith before further batches proceed. Limitations periods are paused for every claim in the queue while this runs. This paragraph governs how claims are administered. It does not limit what any individual can recover.</p>
+<p class="clause"><strong>27.10 California public injunctive relief</strong> Nothing in this Section waives any right to seek public injunctive relief that cannot lawfully be waived. If a claim for public injunctive relief is found non-arbitrable, that claim alone proceeds in court and is stayed pending arbitration of the rest.</p>
+<h2><span class="num">28</span> Changes to These Terms</h2>
+<p><em>Summary: How we change these Terms, and how you’ll be told.</em></p>
+<p class="clause"><strong>28.1 We may update these Terms</strong> We will post the updated version with a new “last updated” date.</p>
+<p class="clause"><strong>28.2 Material changes</strong> For changes that materially affect your rights, we give reasonable advance notice by email, in-app notice, or both.</p>
+<p class="clause"><strong>28.3 Your options</strong> If you do not accept a change, stop using the Service and delete your account before it takes effect.</p>
+<p class="clause"><strong>28.4 Separate consent</strong> Material changes to Section 23 (Limitation of Liability) and Section 27 (Dispute Resolution) require your affirmative acceptance, and will not be imposed by continued use alone.</p>
+<p class="clause"><strong>28.5</strong> No retroactivity where the law prohibits it.</p>
+<h2><span class="num">29</span> Communications and Electronic Notices</h2>
+<p><em>Summary: Emails, push notifications, and texts. We do not send marketing texts.</em></p>
+<p class="clause"><strong>29.1 Electronic contracting</strong> You consent to contract with us electronically and to receive notices and records electronically.</p>
+<p class="clause"><strong>29.2 Service communications</strong> Account, security, payment, invitation, plan, and safety messages. These are essential. If you opt out, parts of the Service will not work.</p>
+<p class="clause"><strong>29.3 Marketing</strong> Yme does not send promotional text messages. We use your phone number to verify your account and to send you messages about your account and your plans. Marketing emails, where we send them, can be turned off any time with the unsubscribe link. We do not use push notifications to advertise to you.</p>
+<p class="clause"><strong>29.4 Rates</strong> Carrier message and data rates may apply.</p>
+<p class="clause"><strong>29.5 Notices to us</strong> <a href="mailto:legal@ymedate.com">legal@ymedate.com</a> and 20801 Biscayne Blvd, Suite 403 PMB 1006, Aventura, FL 33180. Formal service of process goes to our registered agent, MT &amp; Associates LLC, 8461 Lake Worth Road, Suite 121, Lake Worth, FL 33467.</p>
+<h2><span class="num">30</span> Copyright Complaints</h2>
+<p><em>Summary: How to tell us that something on Yme infringes your copyright.</em></p>
+<p class="clause"><strong>30.1 Notice</strong> If you believe content on Yme infringes your copyright, send our designated agent: your signature; identification of the work; identification of the infringing material and enough information to locate it; your contact information; a statement of good-faith belief that the use is unauthorized; and a statement, under penalty of perjury, that the information is accurate and you are authorized to act for the owner.</p>
+<p class="clause"><strong>30.2 Designated agent</strong> Copyright Agent, YME Technologies LLC · 20801 Biscayne Blvd, Suite 403 PMB 1006, Aventura, FL 33180 · <a href="mailto:copyright@ymedate.com">copyright@ymedate.com</a></p>
+<p class="clause"><strong>30.3 Counter-notice</strong> If your content was removed by mistake or misidentification, you may send a counter-notice with your signature, identification of the material and where it appeared, a statement under penalty of perjury of good-faith belief, your contact details, and consent to the jurisdiction of the federal district court for your address.</p>
+<p class="clause"><strong>30.4 Repeat infringers</strong> We terminate their accounts in appropriate circumstances.</p>
+<h2><span class="num">31</span> Export, Sanctions, and Lawful Use</h2>
+<p><em>Summary: Do not use Yme to break sanctions or other laws.</em></p>
+<p class="clause"><strong>31.1</strong> You may not use the Service in violation of U.S. sanctions or export-control laws. You represent that you are not located in an embargoed country, are not on a U.S. Government restricted-party list, and are not otherwise prohibited from using the Service. You must also comply with the laws that apply where you are, including laws against trafficking, fraud, and money laundering.</p>
+<h2><span class="num">32</span> Accessibility</h2>
+<p><em>Summary: Tell us if you need help using Yme.</em></p>
+<p class="clause"><strong>32.1</strong> We want Yme to be usable. If you need assistance using the app, contact <a href="mailto:accessibility@ymedate.com">accessibility@ymedate.com</a>. We will acknowledge your message within 7 days and tell you what we intend to do about it, and we will make reasonable efforts to help. We do not represent that every feature currently meets every accessibility standard, and we do not promise accessibility features we have not built.</p>
+<h2><span class="num">33</span> General Terms</h2>
+<p><em>Summary: The legal machinery at the end.</em></p>
+<p class="clause"><strong>33.1 Entire agreement</strong> These Terms, with any Supplemental Terms and the Privacy Policy, are the entire agreement about the Service.</p>
+<p class="clause"><strong>33.2 Order of precedence</strong> (1) Non-waivable law that applies to you; (2) Section 35, for members it covers; (3) Supplemental Terms, for what they cover; (4) these Terms; (5) other materials.</p>
+<p class="clause"><strong>33.3 Assignment</strong> You may not assign these Terms. We may assign them to an affiliate or in a merger, financing, reorganization, or sale of assets.</p>
+<p class="clause"><strong>33.4 No waiver</strong> If we do not enforce a provision, we have not waived it.</p>
+<p class="clause"><strong>33.5 Severability</strong> An unenforceable provision is modified to the minimum extent needed, or severed; the rest stands.</p>
+<p class="clause"><strong>33.6 Force majeure</strong> We are not liable for failures caused by events beyond our reasonable control.</p>
+<p class="clause"><strong>33.7 No agency</strong> No agency, partnership, joint venture, employment, or fiduciary relationship is created. You may not bind us.</p>
+<p class="clause"><strong>33.8 Survival</strong> The provisions listed in 21.3, and any other provision that by its nature should survive, do.</p>
+<p class="clause"><strong>33.9 Interpretation</strong> Headings are convenience only. “Including” means “including without limitation.” These Terms will not be construed against us merely because we drafted them.</p>
+<p class="clause"><strong>33.10 Third-party beneficiaries</strong> None, except Apple and its subsidiaries with respect to Section 15.2.</p>
+<p class="clause"><strong>33.11 Language</strong> The English version controls.</p>
+<p class="clause"><strong>33.12 Service of process</strong> Service of process may be made on our registered agent, MT &amp; Associates LLC, 8461 Lake Worth Road, Suite 121, Lake Worth, FL 33467.</p>
+<p class="clause"><strong>33.13 Contact</strong></p>
+<p>Support · <a href="mailto:support@ymedate.com">support@ymedate.com</a>
+Legal · <a href="mailto:legal@ymedate.com">legal@ymedate.com</a>
+Safety · <a href="mailto:safety@ymedate.com">safety@ymedate.com</a>
+Accessibility · <a href="mailto:accessibility@ymedate.com">accessibility@ymedate.com</a>
+YME Technologies LLC · 20801 Biscayne Blvd, Suite 403 PMB 1006, Aventura, FL 33180</p>
+<h2><span class="num">34</span> Time Limit for Bringing a Claim</h2>
+<p><em>Summary: Most claims must be brought within one year. Some kinds of claim are excluded from that limit by law.</em></p>
+<p class="clause"><strong>34.1 One year</strong> To the fullest extent permitted by law, any claim arising out of or relating to these Terms or the Service must be brought within ONE (1) YEAR of the date the claim arose. A claim brought after that is permanently barred. This period is paused while the notice-of-dispute process in 27.1 to 27.1b is running, and while claims are queued under 27.9, so that using those steps can never cost you your claim.</p>
+<p class="clause"><strong>34.2 What this does not apply to</strong> This time limit does not apply to: (a) claims of sexual assault or sexual harassment; (b) claims for personal injury or death; (c) any claim where the law of the place you live sets a limitation period that cannot be shortened by agreement; or (d) any claim we bring against you for unpaid amounts, fraud, or infringement of our intellectual property.</p>
+<h2><span class="num">35</span> Special State Terms</h2>
+<p><em>Summary: Extra rights for members in certain states. If you live in one of them, this section wins.</em></p>
+<p class="clause"><strong>35.1 How this Section works</strong> A number of states give people who buy dating services rights that a contract cannot take away. This Section sets those rights out. If you live in a state covered here, this Section applies to you in addition to the rest of these Terms, and wherever it conflicts with anything else in these Terms, this Section controls. Nothing in this Section limits a right you have under a law we have not listed, and nothing in these Terms asks you to waive any of it.</p>
+<p class="clause"><strong>35.2 Your right to cancel a paid membership, and how to use it</strong> If you live in one of the states listed in 35.3, you may cancel a paid membership shortly after you buy it, without penalty or obligation, and get your money back. To cancel under this Section, write to <a href="mailto:legal@ymedate.com">legal@ymedate.com</a>, or to YME Technologies LLC, 20801 Biscayne Blvd, Suite 403 PMB 1006, Aventura, FL 33180. You do not have to give a reason and you do not have to use any particular form of words. An email is effective on the day you send it; a letter is effective on the day you mail it. We will refund you within the period shown in 35.3. If Apple or Google took the payment and will not return it, we will refund you directly, as 10.3b says.</p>
+<p class="clause"><strong>35.3 The cancellation windows, state by state</strong></p>
+<table>
+<thead>
+<tr>
+<th>If you live in</th>
+<th>You may cancel</th>
+<th>We refund you within</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Arizona</td>
+<td>3 business days after you buy</td>
+<td>30 days of receiving your notice</td>
+</tr>
+<tr>
+<td>California</td>
+<td>Midnight of the third business day after you buy, excluding Sundays and holidays</td>
+<td>10 days of receiving your notice</td>
+</tr>
+<tr>
+<td>Colorado</td>
+<td>Midnight of the third business day after you buy</td>
+<td>10 days of receiving your notice</td>
+</tr>
+<tr>
+<td>Connecticut</td>
+<td>Midnight of the third business day after you receive these Terms, or after the Service is made available to you, whichever is later</td>
+<td>10 business days of receiving your notice</td>
+</tr>
+<tr>
+<td>Illinois</td>
+<td>7 calendar days after you buy, because every Yme membership is bought remotely</td>
+<td>30 days of receiving your notice</td>
+</tr>
+<tr>
+<td>New York</td>
+<td>3 business days after you receive these Terms</td>
+<td>Promptly, and in any event within 30 days</td>
+</tr>
+<tr>
+<td>North Carolina</td>
+<td>Midnight of the third business day after you buy</td>
+<td>30 days of receiving your notice</td>
+</tr>
+<tr>
+<td>Ohio</td>
+<td>Midnight of the third business day after the day the Service first became available to you</td>
+<td>10 business days of receiving your notice</td>
+</tr>
+<tr>
+<td>Rhode Island</td>
+<td>Midnight of the third business day after you receive these Terms</td>
+<td>10 business days of receiving your notice</td>
+</tr>
+<tr>
+<td>Wisconsin</td>
+<td>Midnight of the third day after you buy</td>
+<td>21 days of receiving your notice</td>
+</tr>
+</tbody></table>
+<p class="clause"><strong>35.4 California</strong> California law requires us to give you this notice:</p>
+<blockquote>
+<p>“You, the buyer, may cancel this agreement, without any penalty or obligation, at any time prior to midnight of the original contract seller’s third business day following the date of this contract, excluding Sundays and holidays.”</p>
+</blockquote>
+<p>In addition, if you cannot use the Service because of death or disability, you or your estate may be relieved of any obligation to pay for the part of the membership you did not receive, and we will promptly refund any prepaid amount allocable to it. “Disability” here means a condition that prevents you from physically using the Service, verified in writing by a physician you choose and pay for. If the disability is expected to last less than six months, we may instead extend your membership by six months at no charge. Your rights under California Civil Code §§ 1694 to 1694.4 cannot be waived, and any attempt to waive them is void. The California Civil Code § 1542 waiver in 25.6 relates only to disputes with other users under Section 25.</p>
+<p class="clause"><strong>35.5 Illinois</strong> As well as the cancellation right in 35.3:</p>
+<ul>
+<li>If you move more than 20 miles from where you lived when you joined, you may cancel. You will owe only charges accrued before we receive your notice, plus a reasonable fee that will not exceed the lesser of 10% of the unused balance or $50.</li>
+<li>If a member dies, the estate owes only the charges accrued before the date of death, and we may ask for verification.</li>
+<li>Your membership term will not exceed two years, renewals will not exceed one year each, and no payment plan will run more than three years.</li>
+<li>Nothing in these Terms waives any right you have under the Illinois Dating Referral Services Act, and any purported waiver is void.</li>
+</ul>
+<p class="clause"><strong>35.6 New York</strong> New York law requires us to tell you:</p>
+<blockquote>
+<p>“YOU, THE BUYER, MAY CANCEL THIS CONTRACT WITHOUT ANY CANCELLATION FEE WITHIN THREE (3) BUSINESS DAYS AFTER THE DATE OF THIS CONTRACT.”</p>
+</blockquote>
+<p>In addition, if you live in New York:</p>
+<ul>
+<li>You may place your membership on hold for up to one year by writing to <a href="mailto:support@ymedate.com">support@ymedate.com</a>, and we may agree with you to extend that to two years.</li>
+<li>We will not sell or transfer your personal information without your prior written consent, and when your membership ends we return or destroy it promptly. What we hold and for how long is set out in 3.8 and in the Privacy Policy.</li>
+<li>Yme is available throughout the United States, so moving within the United States does not put you outside the area we serve. If you move outside the United States and can no longer use the Service, write to us and we will cancel your membership and refund the unused portion.</li>
+<li>Yme presents possible matches and offers search and location-based matching, so the minimum-referral guarantee in New York General Business Law § 394-c does not apply to your membership. If we ever stop offering those features, we will tell you and the guarantee will apply.</li>
+</ul>
+<p>New York law also requires that we furnish you with the following, which we provide here and separately at sign-up. It is reproduced exactly as it appears in the statute.</p>
+<blockquote>
+<p><strong>Dating Service Consumer Bill of Rights</strong></p>
+<ol>
+<li><p>No social referral service contract shall require the payment by you, the purchaser, of an amount greater than one thousand dollars. In addition, no such contract may extend over a period of time greater than two years.</p>
+</li>
+<li><p>No social referral service contract shall require you, the purchaser, to purchase a good or service which is directly or indirectly related to the social referral service. These extra services are known as ancillary services and, while these ancillary service may be offered to you, the law prohibits the seller from requiring that you purchase this service as a condition of your social referral service contract.</p>
+</li>
+<li><p>If your social referral service contract costs more than twenty-five dollars, the seller must furnish a minimum number of referrals per month to you, unless your social referral service provides the user with a search functionality or is presented with possible matches. If this minimum amount is not furnished to you for two successive months, or in the case of an online dating service with search funtionality or algorithm or location based matching, any social referral, you have the option of cancelling the contract and receiving a full refund of all the money you paid, less a cancellation fee which cannot exceed either fifteen percent of the cash price or a pro rata amount for the number of referrals furnished to you.</p>
+</li>
+<li><p>Unless your social referral service contract is for online dating services that are generally available to users on a regional, national or global basis, your social referral service contract must specify the distance which you, the purchaser, are willing to travel to meet any social referral. No social referrals shall be furnished where you and the referral live at a distance greater than the distance specified in the contract.</p>
+</li>
+<li><p>The provider must have an established policy to address the situation of your moving outside the area it services. This policy must be explained in your contract.</p>
+</li>
+<li><p>If any provision of the social referral service contract is violated, you have the right to bring a court action against the provider which has violated the contract.</p>
+</li>
+</ol>
+</blockquote>
+<p class="clause"><strong>35.7 North Carolina</strong> North Carolina law requires us to give you this notice:</p>
+<blockquote>
+<p>“You the buyer, may cancel this contract at any time prior to midnight of the third business day after the date of this contract. To cancel, you must notify the seller in writing not later than midnight of the third business day after the date of this contract.”</p>
+</blockquote>
+<p>North Carolina law also requires us to give you a full statement of your rights. They are:</p>
+<ul>
+<li>We will deliver to you all information of a personal or private nature that we hold about you, within 30 days after you ask for it.</li>
+<li>We will refund at least 90% of the pro rata cost of any unused part of your membership, within 30 days after you ask, if you cannot benefit from the Service because of death or disability; or if you relocate more than eight miles from where you were and more than 30 miles from us and from any substantially similar service that would take over our obligations; or if we relocate more than eight miles from where we were, or the Service we provide is materially impaired.</li>
+<li>If the total price of all contracts in force between you and us is more than $1,500, we will refund the pro rata cost of any unused services within 30 days after you ask. We may retain a cancellation fee of no more than 25% of that pro rata cost, capped at $500.</li>
+<li>The total duration of your membership will not exceed three years.</li>
+</ul>
+<p class="clause"><strong>35.8 Ohio</strong> As well as the cancellation right in 35.3:</p>
+<ul>
+<li>If you cannot use the Service because of death or disability, we will refund the proportional unused amount within 30 days of being told.</li>
+<li>If you move 25 miles or more away from us, or we move 25 miles or more from you, your membership terminates and we refund the proportional unused amount.</li>
+<li>We will return any information of a personal or private nature within 30 days of your request.</li>
+<li>Your membership will not exceed three years and will not be measured by your lifetime.</li>
+<li>All contracts in force between you and us at the same time are treated as one contract.</li>
+</ul>
+<p class="clause"><strong>35.9 Illinois, New Jersey, and Texas: criminal background screening</strong> If you are a member in Illinois, New Jersey, or Texas, the law of your state requires us to tell you the following, clearly and conspicuously:</p>
+<blockquote>
+<p><strong>YME DOES NOT CONDUCT CRIMINAL BACKGROUND SCREENINGS ON ITS MEMBERS.</strong></p>
+</blockquote>
+<p>Your state also requires us to give you a safety awareness notification. Please read it, and read Section 7, which says more.</p>
+<ul>
+<li>Anyone who is able to commit identity theft can also falsify a dating profile.</li>
+<li>There is no substitute for acting with caution when communicating with any stranger who wants to meet you.</li>
+<li>Never include your last name, email address, home address, phone number, place of work, or any other identifying information in your profile or your early communications.</li>
+<li>Stop communicating with anyone who pressures you for personal or financial information, or who in any other way attempts to trick you into revealing it.</li>
+<li>If you choose to meet someone in person, always tell someone in your family or a friend where you are going and when you will return. Never agree to be picked up at your home. Provide your own transportation to and from the meeting, and meet in a public place with many people around.</li>
+</ul>
+<p class="clause"><strong>35.10 Renewal reminders, and cancelling</strong> If you live in California, Colorado, Connecticut, the District of Columbia, Illinois, Massachusetts, Minnesota, New York, North Dakota, Utah, Vermont, or Virginia, the following applies to your paid membership in addition to 10.3a.</p>
+<ul>
+<li><strong>Annual membership.</strong> We send you a reminder between 30 and 40 days before every renewal, and a second reminder between 5 and 30 days before it.</li>
+<li><strong>Monthly membership.</strong> We send you a reminder at least once every 12 months, and one between 25 and 40 days before the renewal that would take you past 12 continuous months of membership.</li>
+<li><strong>What each reminder says.</strong> What you are subscribed to, the amount and frequency of the charge, the date the renewal takes effect, the deadline to cancel, and how to cancel.</li>
+<li><strong>Price changes.</strong> At least 30 days’ notice before a higher price takes effect. Where your state requires your consent to the higher price, we will obtain it before charging you, and if we do not, you may cancel and receive a prorated refund of the increased amount.</li>
+<li><strong>Cancelling.</strong> Cancelling is at least as easy as signing up, and is available through the same channel you used to sign up. Where Apple or Google bills your membership, the subscription page in your Apple or Google account is that mechanism, and your Yme account settings link you straight to it. We will never require you to call us, wait for an agent, or listen to an offer before you can cancel.</li>
+</ul>
+<p class="clause"><strong>35.11 Fraud bans: Arizona, Colorado, and New York</strong> If you exchanged messages with another member through Yme and we later ban that member for fraud, we will tell you within 24 hours of the ban, or within three days where the law allows longer. We will tell you the banned member’s username or profile identifier, warn you that the person may have used a false identity or attempted fraud, remind you never to send money to another member, and give you a link to fraud-prevention information.</p>
+<p class="clause"><strong>35.12 Nothing here can be waived</strong> The rights in this Section are given to you by law, and you cannot be asked to give them up. Any provision of these Terms that would waive, limit, or shorten them does not apply to you, and any purported waiver is void. If we have missed a right your state gives you, that right still applies, and we will honour it.</p>
+
+    </div>
+  </div>
+</div>
+
+
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="reveal footer-mark">
+      <img src="assets/yme-wordmark.svg" alt="yme">
+    </div>
+    <div class="footer-base">
+      <span class="pill"><span class="dot"></span>Coming soon</span>
+      <nav class="footer-legal">
+        <a href="privacy-policy.html">Privacy Policy</a>
+        <span class="sep" aria-hidden="true">·</span>
+        <a href="terms-of-use.html">Terms of Use</a>
+      </nav>
+      <span class="copy">© 2026 Yme</span>
+      <div class="footer-contact">
+        <span class="label">Contact us</span>
+        <a href="mailto:support@ymedate.com">support@ymedate.com</a>
+      </div>
+    </div>
+  </div>
+</footer>
+<script>
+(function () {
+  "use strict";
+  var reduceMotion = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  // ── Nav: scrolled state ───────────────────────────────────
+  var header = document.getElementById("siteHeader");
+  function onScrollHeader() {
+    if (window.scrollY > 30) header.classList.add("scrolled");
+    else header.classList.remove("scrolled");
+  }
+  window.addEventListener("scroll", onScrollHeader, { passive: true });
+  onScrollHeader();
+
+  // ── Mobile menu ───────────────────────────────────────────
+  var menuBtn = document.getElementById("menuBtn");
+  var mobileMenu = document.getElementById("mobileMenu");
+  var menuIcon = document.getElementById("menuIcon");
+  var menuOpen = false;
+  function setMenu(open) {
+    menuOpen = open;
+    mobileMenu.hidden = !open;
+    menuBtn.setAttribute("aria-expanded", open ? "true" : "false");
+    menuIcon.setAttribute("d", open ? "M3 3l10 10M13 3L3 13" : "M2 4h12M2 8h12M2 12h12");
+  }
+  menuBtn.addEventListener("click", function () { setMenu(!menuOpen); });
+  mobileMenu.querySelectorAll("a").forEach(function (a) {
+    a.addEventListener("click", function () { setMenu(false); });
+  });
+
+  // ── Reveal on scroll (additive) ───────────────────────────
+  var revealEls = document.querySelectorAll(".reveal");
+  if (reduceMotion || !("IntersectionObserver" in window)) {
+    revealEls.forEach(function (el) { el.classList.add("in"); });
+  } else {
+    revealEls.forEach(function (el) { el.classList.add("reveal-hidden"); });
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting) {
+          e.target.classList.remove("reveal-hidden");
+          e.target.classList.add("in");
+          io.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.05, rootMargin: "0px 0px -40px 0px" });
+    revealEls.forEach(function (el) { io.observe(el); });
+    // Safety net: never leave anything hidden.
+    setTimeout(function () {
+      document.querySelectorAll(".reveal-hidden").forEach(function (el) {
+        el.classList.remove("reveal-hidden"); el.classList.add("in");
+      });
+    }, 2500);
+  }
+
+   ────────────────────────────
+  var phone = document.getElementById("phone");
+  var groups = [
+    phone.querySelectorAll(".profile-bg"),
+    phone.querySelectorAll(".profile-name"),
+    phone.querySelectorAll(".detail-title"),
+    phone.querySelectorAll(".detail-acticon .ic"),
+  ];
+  var valGroups = phone.querySelectorAll(".detail-vals");
+  var STATE_COUNT = 3;
+  var idx = 0;
+  var paused = false;
+  var timer = null;
+
+  function applyState(i) {
+    groups.forEach(function (nodes) {
+      nodes.forEach(function (n) {
+        n.classList.toggle("active", Number(n.getAttribute("data-i")) === i);
+      });
+    });
+    valGroups.forEach(function (g) {
+      g.querySelectorAll(".detail-val").forEach(function (n) {
+        n.classList.toggle("active", Number(n.getAttribute("data-i")) === i);
+      });
+    });
+  }
+  function tick() { idx = (idx + 1) % STATE_COUNT; applyState(idx); }
+  function start() { if (!timer && !reduceMotion) timer = setInterval(function () { if (!paused) tick(); }, 4200); }
+  phone.addEventListener("mouseenter", function () { paused = true; });
+  phone.addEventListener("mouseleave", function () { paused = false; });
+  applyState(0);
+  start();
+})();
+</script>
+</body>
+</html>
